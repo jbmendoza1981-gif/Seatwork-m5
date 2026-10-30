@@ -1,1 +1,39 @@
-# Seatwork-m5
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int number;
+
+    do {
+        cout << "Enter a number: ";
+        cin >> number;
+    if (number >= 9999) {
+            cout << "Maximum of 4 digits only.\n";
+            continue;
+        }
+    } while (number > 9999);
+
+    if (number >= 0 && number <= 9999) {
+
+        if (number <= 9) {
+            cout << "It is a positive number.\n";
+            cout << "Number of digits: 1";
+        }else if (number <= 99) {
+            cout << "It is a positive number.\n";
+            cout << "Number of digits: 2";
+        }else if (number <= 999) {
+            cout << "It is a positive number.\n";
+            cout << "Number of digits: 3";
+        }else {
+            cout << "It is a positive number.\n";
+            cout << "Number of digits: 4";
+        }
+
+    }
+    else {
+        cout << "It is a non-positive number";
+    }
+
+    return 0;
+}# Seatwork-m5
